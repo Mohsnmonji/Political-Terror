@@ -1,0 +1,72 @@
+
+---
+title: "Instructions for Running the Source Code Locally"
+author: "Mohsen Monji"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Overview
+
+This document provides instructions on how to run the R source code for the **Political Terror Dashboard**. The purpose of this document is to outline how to access and understand the code. Follow the steps below to get started.
+
+## 1. Access the Source Code
+
+The source code for the Political Terror Dashboard is available on this GitHub repository. Clone the repository using the following command:
+
+```bash
+git clone https://github.com/Mohsnmonji/Political-Terror-Dashboard.git
+```
+
+This repository contains all the R code used to build the dashboard.
+
+## 2. Download the Data and Codebook
+
+The **Political Terror Scale (PTS)** data and codebook are available on the official website. These files are **NOT included** in the repository, but you will need to download them manually.
+
+- **Data**: [Download the Political Terror data](https://www.politicalterrorscale.org/)
+- **Codebook**: [Download the Codebook](https://www.politicalterrorscale.org/)
+
+Once downloaded, place the `PTS-2024.csv` data file and `PTS-Codebook-V220.pdf` codebook file in the same directory as the cloned repository.
+
+## 3. Key R Packages
+
+The app relies on the following R packages, which must be installed to run the code locally:
+
+```r
+install.packages(c("shiny", "ggplot2", "dplyr"))
+```
+
+These packages are essential for Shiny app development, data manipulation, and plotting.
+
+## 4. Main Files and Structure
+
+The key files in the repository are:
+
+- **PTS_Trend_Code.R**: The primary R script for running the Shiny app. This script contains the UI and server logic for generating the dashboard.
+
+## 5. Running the App for Development
+
+To modify or explore the app code, set your working directory to the cloned repository and run the app locally in R:
+
+```r
+setwd("/path/to/Political-Terror-Dashboard")
+shiny::runApp('PTS_Trend_Code.R')
+```
+
+Replace `"/path/to/Political-Terror-Dashboard"` with the actual path to the cloned repository on your machine.
+
+By following these steps, you can access and modify the **Political Terror Dashboard**'s source code for research, learning, or development purposes.
+
+## 6. Contribution
+
+If you wish to contribute to the development of the app, feel free to fork the repository and submit pull requests with your enhancements or bug fixes. You can also raise issues or suggestions directly on the GitHub page.
+
+---
+
+**Repository**: [Political Terror Dashboard GitHub Repository](https://github.com/Mohsnmonji/Political-Terror-Dashboard.git)  
+**Data and Codebook**: [Political Terror Scale Website](https://www.politicalterrorscale.org/)
+```
+
+---
