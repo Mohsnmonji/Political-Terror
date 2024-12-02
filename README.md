@@ -74,7 +74,7 @@ The codebook can be downloaded from the [Political Terror Scale project website]
 
 ### Instructions
 
-For instructions on how to run the R code for the app, please refer to the `Instructions.Rmd` or `Instructions.pdf` files in this repository.
+For instructions on how to run the R code for the app, please refer to the `Instructions.Rmd` file in this repository.
 
 ### License
 
